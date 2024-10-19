@@ -23,6 +23,12 @@ const config = {
       }
     },
     {
+      files: '*.svg',
+      options: {
+        parser: 'html'
+      }
+    },
+    {
       files: '*.{yaml,yml}',
       options: {
         tabWidth: 3,

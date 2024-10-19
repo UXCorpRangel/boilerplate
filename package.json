@@ -49,6 +49,7 @@
       "prettier --cache --write \"./src/**/*.astro\""
     ],
     "./src/**/*.css": "prettier --cache --write \"./src/**/*.css\"",
+    "./**/*.svg": "prettier --cache --write \"./**/*.svg\"",
     "./**/*.json": "prettier --cache --write \"./**/*.json\"",
     "./**/*.yml": "prettier --cache --write \"./**/*.yml\""
   },
