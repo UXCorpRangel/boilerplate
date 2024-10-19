@@ -41,6 +41,7 @@ ls:
 ignore:
    - .git
    - node_modules
+   - dist
    - .prettierrc.mjs
    - .prettierignore
    - .eslintrc.cjs
