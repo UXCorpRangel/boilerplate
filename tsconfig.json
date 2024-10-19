@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@contracts": ["src/contracts"],
       "@data/*": ["src/data/*"],
       "@layouts/*": ["src/layouts/*"],
       "@scripts/*": ["src/scripts/*"],
