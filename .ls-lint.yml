@@ -4,6 +4,7 @@ ls:
    .mjs: kebab-case
    .ts: kebab-case
    .d.ts: kebab-case
+   .type.ts: kebab-case
    .css: kebab-case
    .json: kebab-case
    .yml: kebab-case
