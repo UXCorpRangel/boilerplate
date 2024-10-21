@@ -32,6 +32,10 @@ Con PNPM:
 pnpm create astro@latest --template UXCorpRangel/boilerplate
 ```
 
+Haz clic en el siguiente enlace para generar un repositorio a partir de este Boilerplate:
+
+[![Generate template](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/new?template_name=boilerplate&template_owner=UXCorpRangel)
+
 ## 🛠️ Estructura del proyecto
 
 - [public/favicons/](./public/favicons/): Contiene los archivos de favicon utilizados en la aplicación.
