@@ -10,7 +10,6 @@ Boilerplate opinionado que incluye integraciones y configuraciones enfocadas en 
 - 🗃️ Reglas para nombres de archivos y carpetas
 - 🤖 Dependabot para actualizaciones automáticas
 - 🔄 Plantillas para Pull Requests
-- 🌐 Configuración para Tunnels
 - ⚡ Enfocado en Performance
 - ⚙️ Enfocado en SEO
 - ✨ Soporte iconos SVG
@@ -81,8 +80,6 @@ Descubre las principales integraciones de Astro utilizadas en este proyecto:
 - [astro-seo-schema](https://www.npmjs.com/package/astro-seo-schema): Es una integración que genera automáticamente datos estructurados de esquema ([schema.org](https://schema.org/)) para tu sitio web de Astro.
 
 - [astro-sitemap](https://www.npmjs.com/package/astro-sitemap): Genera automáticamente un sitemap XML para tu sitio web de Astro.
-
-- [astro-tunnel](https://www.npmjs.com/package/astro-tunnel): Permite exponer localmente tu proyecto de Astro a través de una URL pública.
 
 - [sanitize.css](https://www.npmjs.com/package/sanitize.css): Es una hoja de estilos que ofrece un reinicio (reset) y una normalización de los estilos CSS por defecto en los navegadores. Garantiza una apariencia más consistente entre distintos navegadores, eliminando las diferencias en estilos por defecto, lo que permite un desarrollo más predecible y coherente de la UI.
 
