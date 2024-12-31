@@ -12,6 +12,7 @@
       "@styles/*": ["src/styles/*"],
       "@ui/*": ["src/components/ui/*"]
     },
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
