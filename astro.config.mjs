@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config'
 import { URL } from './src/data/constants'
 
-import tunnel from 'astro-tunnel'
 import icon from 'astro-icon'
 import playformInline from '@playform/inline'
 import sitemap from 'astro-sitemap'
@@ -26,7 +25,6 @@ export default defineConfig({
     }
   },
   integrations: [
-    tunnel(),
     icon(),
     playformInline(),
     sitemap({
