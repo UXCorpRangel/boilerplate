@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
-    "@playform/compress": "0.1.6",
+    "@playform/compress": "0.1.7",
     "@playform/inline": "0.1.1",
     "astro": "5.1.2",
     "astro-compressor": "1.0.0",
