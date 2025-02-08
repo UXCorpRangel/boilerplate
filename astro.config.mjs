@@ -7,6 +7,9 @@ import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
 import compressor from 'astro-compressor'
 
+// Tamaño estándar de la unidad en píxeles para convertir a rem
+const STANDARD_UNIT_SIZE = 16
+
 // https://astro.build/config
 export default defineConfig({
   site: URL,
@@ -21,7 +24,16 @@ export default defineConfig({
   compressHTML: false,
   vite: {
     css: {
-      transformer: 'lightningcss'
+      transformer: 'lightningcss',
+      lightningcss: {
+        visitor: {
+          Length({ unit, value }) {
+            if (unit === 'px') {
+              return { unit: 'rem', value: value / STANDARD_UNIT_SIZE }
+            }
+          }
+        }
+      }
     }
   },
   integrations: [
