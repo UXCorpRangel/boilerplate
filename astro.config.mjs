@@ -1,3 +1,5 @@
+// @ts-check
+
 import { defineConfig } from 'astro/config'
 import { URL } from './src/data/constants'
 
@@ -7,7 +9,7 @@ import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
 import compressor from 'astro-compressor'
 
-// Tamaño estándar de la unidad en píxeles para convertir a rem
+// Standard unit size in pixels to convert to rem
 const STANDARD_UNIT_SIZE = 16
 
 // https://astro.build/config
@@ -27,6 +29,7 @@ export default defineConfig({
       transformer: 'lightningcss',
       lightningcss: {
         visitor: {
+          // Convert px to rem
           Length({ unit, value }) {
             if (unit === 'px') {
               return { unit: 'rem', value: value / STANDARD_UNIT_SIZE }
@@ -44,6 +47,9 @@ export default defineConfig({
       lastmod: new Date(),
       createLinkInHead: false,
       xmlns: {
+        news: false,
+        video: false,
+        image: false,
         xhtml: true
       },
       i18n: {
@@ -60,26 +66,32 @@ export default defineConfig({
     }),
     playformCompress({
       HTML: {
-        collapseBooleanAttributes: true,
-        maxLineLength: 0,
-        removeAttributeQuotes: false,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeOptionalTags: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true
+        'html-minifier-terser': {
+          collapseBooleanAttributes: true,
+          maxLineLength: 0,
+          removeAttributeQuotes: false,
+          removeComments: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true,
+          removeRedundantAttributes: true,
+          useShortDoctype: true
+        }
       },
       JavaScript: {
-        compress: {
-          ecma: 2015
-        },
-        format: {
-          comments: false,
-          ecma: 2015
-        },
-        ecma: 2015,
-        module: true
+        terser: {
+          compress: {
+            arguments: true,
+            drop_console: true
+          },
+          format: {
+            comments: false,
+            indent_level: 2
+          },
+          ecma: 2020
+        }
       },
+      Cache: true,
+      CSS: false,
       Image: false,
       SVG: false
     }),
