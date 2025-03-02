@@ -88,12 +88,14 @@
     "simple-git-hooks": "2.11.1"
   },
   "engines": {
-    "node": ">=18.20.0",
-    "pnpm": ">=9.12.0"
+    "node": ">=20.18.3",
+    "pnpm": ">=10.5.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "sharp",
+      "simple-git-hooks"
     ]
   }
 }
