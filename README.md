@@ -73,6 +73,8 @@ Descubre las principales integraciones de Astro utilizadas en este proyecto:
 
 - [@playform/inline](https://www.npmjs.com/package/@playform/inline): Es una herramienta que se enfoca en la extracción de CSS Critico para la aplicación.
 
+- [astro-capo](https://github.com/natemoo-re/astro-capo): Esta integración se encarga de organizar las etiquetas dentro de `<head>` usando [`capo.js`](https://github.com/rviscomi/capo.js).
+
 - [astro-compressor](https://www.npmjs.com/package/astro-compressor): Es una integración que se encarga de comprimir los archivos a Brotli y Gzip durante el proceso de build.
 
 - [astro-icon](https://www.npmjs.com/package/astro-icon): Es una integración que facilita la gestión e inserción de íconos SVG en tu proyecto de Astro.
