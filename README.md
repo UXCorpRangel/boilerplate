@@ -1,6 +1,6 @@
-# 🚀 Boilerplate
+# 🚀 Astro Boilerplate
 
-Boilerplate opinionado que incluye integraciones y configuraciones enfocadas en buenas prácticas para construir sitios rápidos, accesibles y listos para producción.
+Astro boilerplate que incluye integraciones y configuraciones iniciales enfocadas en buenas prácticas para construir sitios rápidos, accesibles y listos para producción.
 
 ## 👀 Características
 
@@ -13,7 +13,7 @@ Boilerplate opinionado que incluye integraciones y configuraciones enfocadas en 
 - ⚡ Enfocado en Performance
 - ⚙️ Enfocado en SEO
 - ✨ Soporte iconos SVG
-- 🪄 View transitions entre documentos ([Reference](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document))
+- 🪄 View transitions entre documentos ([Referencia](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document))
 
 ## 🤔 ¿Cómo usar la plantilla?
 
