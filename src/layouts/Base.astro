@@ -1,5 +1,6 @@
 ---
 import { type Options } from '@contracts'
+import { Head } from 'astro-capo'
 import { Schema } from 'astro-seo-schema'
 import Favicons from '@components/Favicons.astro'
 import 'sanitize.css'
@@ -18,7 +19,7 @@ const { title, description, metaRobots } = options
 
 <!doctype html>
 <html dir="ltr" lang="es">
-  <head>
+  <Head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -155,7 +156,7 @@ const { title, description, metaRobots } = options
     <meta name="theme-color" content="#ee2525" />
 
     <slot name="social-media" />
-  </head>
+  </Head>
   <body>
     <slot />
 
