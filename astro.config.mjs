@@ -68,12 +68,21 @@ export default defineConfig({
       HTML: {
         'html-minifier-terser': {
           collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          conservativeCollapse: true,
           maxLineLength: 0,
+          minifyCSS: true,
+          minifyJS: true,
+          minifyURLs: true,
+          noNewlinesBeforeTagClose: true,
           removeAttributeQuotes: false,
           removeComments: true,
           removeEmptyAttributes: true,
-          removeOptionalTags: true,
           removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          sortAttributes: true,
+          sortClassName: true,
           useShortDoctype: true
         }
       },
