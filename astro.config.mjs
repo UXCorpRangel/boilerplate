@@ -3,14 +3,14 @@
 import { defineConfig } from 'astro/config'
 import { URL } from './src/data/constants'
 
+import { composeVisitors } from 'lightningcss'
+import pxtorem from 'lightningcss-plugin-pxtorem'
+
 import icon from 'astro-icon'
 import playformInline from '@playform/inline'
 import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
 import compressor from 'astro-compressor'
-
-// Standard unit size in pixels to convert to rem
-const STANDARD_UNIT_SIZE = 16
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,14 +28,7 @@ export default defineConfig({
     css: {
       transformer: 'lightningcss',
       lightningcss: {
-        visitor: {
-          // Convert px to rem
-          Length({ unit, value }) {
-            if (unit === 'px') {
-              return { unit: 'rem', value: value / STANDARD_UNIT_SIZE }
-            }
-          }
-        }
+        visitor: composeVisitors([pxtorem()])
       }
     }
   },
