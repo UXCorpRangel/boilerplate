@@ -67,6 +67,7 @@
     "lightningcss-plugin-pxtorem": "0.0.8",
     "sanitize.css": "13.0.0",
     "schema-dts": "1.1.5",
+    "sharp": "0.34.1",
     "typescript": "5.8.3"
   },
   "devDependencies": {
