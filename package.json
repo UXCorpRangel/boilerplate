@@ -88,7 +88,7 @@
     "neostandard": "0.12.1",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
-    "simple-git-hooks": "2.12.1"
+    "simple-git-hooks": "2.13.0"
   },
   "engines": {
     "node": ">=20.18.3",
