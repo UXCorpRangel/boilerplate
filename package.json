@@ -59,7 +59,7 @@
     "@playform/inline": "0.1.2",
     "astro": "5.6.1",
     "astro-capo": "0.0.1",
-    "astro-compressor": "1.0.0",
+    "astro-compressor": "1.1.2",
     "astro-icon": "1.1.5",
     "astro-seo-schema": "5.0.0",
     "astro-sitemap": "1.0.0",
