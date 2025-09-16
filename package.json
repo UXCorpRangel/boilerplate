@@ -86,7 +86,7 @@
     "globals": "16.0.0",
     "lint-staged": "15.5.1",
     "neostandard": "0.12.1",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
     "simple-git-hooks": "2.12.1"
   },
